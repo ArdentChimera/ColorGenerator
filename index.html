@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <title>Color Generator</title>
+</head>
+<body>
+    <div id="container"  class="container">
+        <input type="color" name="color" id="colorPicker" class="colorPicker" />
+        <label for="colorScheme">
+            <select name="colorScheme" id="colorScheme">
+                <option>Monochrome</option>
+                <option>Monochrome-dark</option>
+                <option>Monochrome-light</option>
+                <option>Analogic</option>
+                <option>Complement</option>
+                <option>Analogic-complement</option>
+                <option>Triad</option>
+                <option>Quad</option>
+            </select>
+        </label>
+        <button id="get-btn">Get color scheme</button>
+            <div id="colorOne" class="content"></div>
+            <div id="colorTwo" class="content"></div>
+            <div id="colorThree" class="content"></div>
+            <div id="colorFour" class="content"></div>
+            <div id="colorFive" class="content"></div>
+    </div>
+    <div id="footer">
+        <h3 id="colorOneValue"></h3>
+        <h3 id="colorTwoValue"></h3>
+        <h3 id="colorThreeValue"></h3>
+        <h3 id="colorFourValue"></h3>
+        <h3 id="colorFiveValue"></h3>
+    </div>
+    <script src="/index.js"></script>
+</body>
+</html>
